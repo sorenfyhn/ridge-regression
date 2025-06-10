@@ -7,7 +7,7 @@ Framework for a ridge regression model that predicts heating load.
 
 `final_model.py` trains the final model using the full data set and the identified `best_alpha`. This script also outputs the diagnostic plot `residuals_analysis.png` to review the residuals:
 
-[Diagnostic plot](residuals_analysis.png)
+![Diagnostic plot](residuals_analysis.png)
 
 Tuning and prediction results can be found in the log files `training.log` and `final_model.log`.
 
