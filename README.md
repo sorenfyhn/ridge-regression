@@ -1,7 +1,7 @@
 
 # Ridge regression
 
-This repository contains my generic framework for prototyping a ridge regression model. It is based on project work I did for a Machine Learning course at DTU. It is a fully working example with the included dataset, but it is also easy to adapt it for a new project.
+This repository contains my generic framework for prototyping a ridge regression model. It is based on project work I did for a Machine Learning course at DTU. It is a fully working example with the included dataset, but it is also easy to adapt for a new project.
 
 ## Structure of the scripts
 
