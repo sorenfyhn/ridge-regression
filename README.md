@@ -1,13 +1,27 @@
 
 # Ridge regression
 
-Framework for a ridge regression model that predicts heating load.
+This repository contains my framework for prototyping a ridge regression model. It is based on project work I did for a Machine Learning course at DTU.
 
-`ridge_regression.py` tunes the hyperparameter `alpha` using nested cross-validation.
+## Structure of the scripts
 
-`final_model.py` trains the final model using the full data set and the identified `best_alpha`. This script also outputs the diagnostic plot `residuals_analysis.png` for reviewing the residuals.
+### ridge_regression.py
 
-Tuning and prediction results can be found in the log files `training.log` and `final_model.log`.
+- Load data into a pandas DataFrame.
+- Set pandas extension dtypes to optimize memory usage and support nullability.
+- Manually select features, remove duplicate rows, and reindex the DataFrame.
+- Tune `alpha` using the inner loop of nested cross-validation.
+- Estimate generalization error (RMSE) from the outer loop and log it to `training.log`.
+- Compute average `best_alpha` across folds and log it to `training.log`.
+
+### final_model.py
+
+- Load data into a pandas DataFrame.
+- Set pandas extension dtypes to optimize memory usage and support nullability.
+- Manually select features, remove duplicate rows, and reindex the DataFrame.
+- Set `best_alpha` and train the final model on the full dataset.
+- Rescale model coefficients and log them to `final_model.log`.
+- Compute residuals and save a diagnostic plot to `residuals_analysis.png`.
 
 ![Diagnostic plot](residuals_analysis.png)
 

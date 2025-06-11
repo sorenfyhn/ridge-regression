@@ -1,7 +1,7 @@
 [project]
 name = "ridge-regression"
 version = "0.1.0"
-description = "Framework for a ridge regression model that predicts heating load."
+description = "Framework for a ridge regression model."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
