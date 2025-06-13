@@ -1,0 +1,12 @@
+2025-06-13 19:28:45,180 - INFO - Best alpha (lambda): 0.498 | RMSE: 2.856
+2025-06-13 19:28:47,214 - INFO - Best alpha (lambda): 0.215 | RMSE: 3.140
+2025-06-13 19:28:49,302 - INFO - Best alpha (lambda): 0.215 | RMSE: 3.862
+2025-06-13 19:28:51,325 - INFO - Best alpha (lambda): 0.215 | RMSE: 3.025
+2025-06-13 19:28:53,357 - INFO - Best alpha (lambda): 0.163 | RMSE: 3.341
+2025-06-13 19:28:55,385 - INFO - Best alpha (lambda): 0.215 | RMSE: 2.970
+2025-06-13 19:28:57,412 - INFO - Best alpha (lambda): 0.123 | RMSE: 4.395
+2025-06-13 19:28:59,439 - INFO - Best alpha (lambda): 0.285 | RMSE: 3.185
+2025-06-13 19:29:01,460 - INFO - Best alpha (lambda): 0.163 | RMSE: 2.488
+2025-06-13 19:29:03,493 - INFO - Best alpha (lambda): 0.870 | RMSE: 3.900
+2025-06-13 19:29:03,493 - INFO - Approximate generalization error (RMSE): 3.316 | Std: 0.544
+2025-06-13 19:29:03,493 - INFO - Average alpha for final model: 0.296

@@ -16,7 +16,7 @@ logging.basicConfig(
     format="%(asctime)s - %(levelname)s - %(message)s",
     handlers=[
         logging.StreamHandler(),  # Console output
-        logging.FileHandler("training.log"),  # Log file output
+        logging.FileHandler("./logs/training.log"),  # Log file output
     ],
 )
 
@@ -25,7 +25,7 @@ logging.basicConfig(
 # =======================================
 
 # Load data to pandas dataframe
-X_data = pd.read_csv("ENB2012_data.csv")
+X_data = pd.read_csv("./data/ENB2012_data.csv")
 
 # Set data types using pandas extension dtypes
 X_data = X_data.astype(

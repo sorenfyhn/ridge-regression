@@ -16,7 +16,7 @@ logging.basicConfig(
     format="%(asctime)s - %(levelname)s - %(message)s",
     handlers=[
         logging.StreamHandler(),  # Console output
-        logging.FileHandler("final_model.log"),  # Log file output
+        logging.FileHandler("./logs/final_model.log"),  # Log file output
     ],
 )
 
@@ -25,7 +25,7 @@ logging.basicConfig(
 # =======================================
 
 # Load data to pandas dataframe
-X_data = pd.read_csv("ENB2012_data.csv")
+X_data = pd.read_csv("./data/ENB2012_data.csv")
 
 # Set data types using pandas extension dtypes
 X_data = X_data.astype(
@@ -67,7 +67,7 @@ assert len(X_features) == len(y_target), "Number of rows do not match after rein
 # =======================================
 
 # Set alpha (lambda)
-best_alpha = 0.209
+best_alpha = 0.296
 
 # Create final pipeline with best alpha
 final_model = Pipeline(
@@ -188,4 +188,4 @@ fig.suptitle(
 plt.tight_layout(rect=[0, 0, 1, 0.95])
 
 # Save the plot as PNG with DPI = 600
-plt.savefig("residuals_analysis.png", dpi=600)
+plt.savefig("./images/residuals_analysis.png", dpi=600)
