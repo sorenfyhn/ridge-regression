@@ -23,7 +23,7 @@ This repository contains my generic framework for prototyping a ridge regression
 - Rescale model coefficients and log them to `final_model.log`.
 - Compute residuals and save a diagnostic plot to `residuals_analysis.png`.
 
-![Diagnostic plot](residuals_analysis.png)
+![Diagnostic plot](/images/residuals_analysis.png)
 
 ## Dataset
 
