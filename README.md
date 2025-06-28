@@ -11,6 +11,7 @@ This repository contains my generic framework for prototyping a ridge regression
 - Set pandas extension dtypes to optimize memory usage and support nullability.
 - Manually select features, remove duplicate rows, and reindex the DataFrame.
 - Tune `alpha` using the inner loop of nested cross-validation.
+- Validation and training errors (RMSE) for each fold are logged to `training.log` for evaluating overfitting.
 - Estimate generalization error (RMSE) from the outer loop and log it to `training.log`.
 - Compute average `best_alpha` across folds and log it to `training.log`.
 

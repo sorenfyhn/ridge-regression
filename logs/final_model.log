@@ -1,8 +1,8 @@
-2025-06-13 19:30:40,850 - INFO - Coefficients (original scale):
-2025-06-13 19:30:40,850 - INFO - SurfaceArea: 0.015
-2025-06-13 19:30:40,850 - INFO - WallArea: 0.037
-2025-06-13 19:30:40,850 - INFO - RoofArea: 0.011
-2025-06-13 19:30:40,850 - INFO - OverallHeight: 5.524
-2025-06-13 19:30:40,850 - INFO - Orientation: -0.067
-2025-06-13 19:30:40,850 - INFO - GlazingArea: 26.397
-2025-06-13 19:30:40,850 - INFO - Intercept: -36.922
+2025-06-28 22:15:38,410 - INFO - Coefficients (original scale):
+2025-06-28 22:15:38,410 - INFO - SurfaceArea: 0.015
+2025-06-28 22:15:38,410 - INFO - WallArea: 0.037
+2025-06-28 22:15:38,410 - INFO - RoofArea: 0.012
+2025-06-28 22:15:38,410 - INFO - OverallHeight: 5.557
+2025-06-28 22:15:38,410 - INFO - Orientation: -0.067
+2025-06-28 22:15:38,410 - INFO - GlazingArea: 26.405
+2025-06-28 22:15:38,410 - INFO - Intercept: -37.317

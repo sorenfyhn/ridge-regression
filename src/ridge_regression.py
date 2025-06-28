@@ -92,7 +92,8 @@ grid_search = GridSearchCV(
 )
 
 # Variables to accumulate RMSEs and alphas from each fold
-fold_rmse = []
+test_rmse_list = []
+train_rmse_list = []
 best_alphas = []
 
 for train_idx, test_idx in cv_outer.split(X_features, y_target):
@@ -110,20 +111,28 @@ for train_idx, test_idx in cv_outer.split(X_features, y_target):
 
     # Get predictions from the best model
     y_pred = best_model.predict(X_test)
+    y_train_pred = best_model.predict(X_train)
 
     # Validation score
-    rmse = np.sqrt(mean_squared_error(y_test, y_pred))
-    fold_rmse.append(rmse)
+    test_rmse = np.sqrt(mean_squared_error(y_test, y_pred))
+    test_rmse_list.append(test_rmse)
 
-    # Log the best hyperparameter and RMSE
-    logging.info(f"Best alpha (lambda): {best_alpha:.3f} | RMSE: {rmse:.3f}")
+    # Training score
+    train_rmse = np.sqrt(mean_squared_error(y_train, y_train_pred))
+    train_rmse_list.append(train_rmse)
+
+    # Log the best hyperparameter and RMSEs
+    logging.info(
+        f"Best alpha (lambda): {best_alpha:.3f} | RMSE_test: {test_rmse:.3f} | RMSE_train: {train_rmse:.3f}"
+    )
 
 # Calculate and log the approximate generalization error
-mean_rmse = np.mean(fold_rmse)
-std_rmse = np.std(fold_rmse)
-logging.info(
-    f"Approximate generalization error (RMSE): {mean_rmse:.3f} | Std: {std_rmse:.3f}"
-)
+mean_test_rmse = np.mean(test_rmse_list)
+logging.info(f"Approximate generalization error (mean RMSE_test): {mean_test_rmse:.3f}")
+
+# Calculate and log the training error
+mean_train_rmse = np.mean(train_rmse_list)
+logging.info(f"Training error (mean RMSE_train): {mean_train_rmse:.3f}")
 
 # Calculate and log the average alpha
 mean_alpha = np.mean(best_alphas)

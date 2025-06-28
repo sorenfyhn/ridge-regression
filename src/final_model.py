@@ -67,7 +67,7 @@ assert len(X_features) == len(y_target), "Number of rows do not match after rein
 # =======================================
 
 # Set alpha (lambda)
-best_alpha = 0.296
+best_alpha = 0.236
 
 # Create final pipeline with best alpha
 final_model = Pipeline(

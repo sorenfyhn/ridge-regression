@@ -1,12 +1,13 @@
-2025-06-13 19:28:45,180 - INFO - Best alpha (lambda): 0.498 | RMSE: 2.856
-2025-06-13 19:28:47,214 - INFO - Best alpha (lambda): 0.215 | RMSE: 3.140
-2025-06-13 19:28:49,302 - INFO - Best alpha (lambda): 0.215 | RMSE: 3.862
-2025-06-13 19:28:51,325 - INFO - Best alpha (lambda): 0.215 | RMSE: 3.025
-2025-06-13 19:28:53,357 - INFO - Best alpha (lambda): 0.163 | RMSE: 3.341
-2025-06-13 19:28:55,385 - INFO - Best alpha (lambda): 0.215 | RMSE: 2.970
-2025-06-13 19:28:57,412 - INFO - Best alpha (lambda): 0.123 | RMSE: 4.395
-2025-06-13 19:28:59,439 - INFO - Best alpha (lambda): 0.285 | RMSE: 3.185
-2025-06-13 19:29:01,460 - INFO - Best alpha (lambda): 0.163 | RMSE: 2.488
-2025-06-13 19:29:03,493 - INFO - Best alpha (lambda): 0.870 | RMSE: 3.900
-2025-06-13 19:29:03,493 - INFO - Approximate generalization error (RMSE): 3.316 | Std: 0.544
-2025-06-13 19:29:03,493 - INFO - Average alpha for final model: 0.296
+2025-06-28 22:13:10,569 - INFO - Best alpha (lambda): 0.870 | RMSE_test: 3.338 | RMSE_train: 3.220
+2025-06-28 22:13:12,813 - INFO - Best alpha (lambda): 0.376 | RMSE_test: 3.225 | RMSE_train: 3.229
+2025-06-28 22:13:14,915 - INFO - Best alpha (lambda): 0.123 | RMSE_test: 2.771 | RMSE_train: 3.267
+2025-06-28 22:13:17,012 - INFO - Best alpha (lambda): 0.040 | RMSE_test: 4.004 | RMSE_train: 3.122
+2025-06-28 22:13:19,526 - INFO - Best alpha (lambda): 0.285 | RMSE_test: 3.357 | RMSE_train: 3.201
+2025-06-28 22:13:21,678 - INFO - Best alpha (lambda): 0.215 | RMSE_test: 2.701 | RMSE_train: 3.274
+2025-06-28 22:13:23,761 - INFO - Best alpha (lambda): 0.123 | RMSE_test: 3.916 | RMSE_train: 3.148
+2025-06-28 22:13:25,812 - INFO - Best alpha (lambda): 0.285 | RMSE_test: 3.418 | RMSE_train: 3.206
+2025-06-28 22:13:27,888 - INFO - Best alpha (lambda): 0.000 | RMSE_test: 2.578 | RMSE_train: 3.280
+2025-06-28 22:13:30,039 - INFO - Best alpha (lambda): 0.040 | RMSE_test: 3.813 | RMSE_train: 3.150
+2025-06-28 22:13:30,039 - INFO - Approximate generalization error (mean RMSE_test): 3.312
+2025-06-28 22:13:30,039 - INFO - Training error (mean RMSE_train): 3.210
+2025-06-28 22:13:30,039 - INFO - Average alpha for final model: 0.236
